@@ -2,7 +2,7 @@
 import math
 
 def NewtonSqrl(x):
-    y = x
+    y = 4
     while abs(y * y - x) > 1e-6:
         y = (y + x/y) / 2
     return  y
