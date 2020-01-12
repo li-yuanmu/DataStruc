@@ -1,3 +1,4 @@
+#装饰器
 def check(func):
     def inside(a, b):
         if b == 0:
