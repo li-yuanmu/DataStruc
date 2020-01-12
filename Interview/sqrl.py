@@ -26,6 +26,6 @@ def binarysearch(num):
         return y
     if y**2 -num == 0:
         return y
-
+print(python3.__version__)
 print(NewtonSqrl(4))
 print(binarysearch(4))
