@@ -7,7 +7,8 @@ def sqrt_newton(a):
 	while abs(x*x - a) > 0.0001:
 		x = (x + a/x) / 2
 	return x
-def binary(a):
+	
+def binary(a):   
 
 	l = 0
 
@@ -22,6 +23,20 @@ def binary(a):
 			l = mid
 		mid = (l + r) / 2.0
 	print(mid)
+
+def binary_sqrt(x):
+	left = 0
+    right = x // 2 + 1
+
+     while left < right:
+        mid = (right + left + 1) // 2
+        square = mid*mid
+        if square > x:
+            right = mid - 1
+        else:
+            left = mid + 1
+    return left   
+        
 
 		
 
